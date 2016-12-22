@@ -1,0 +1,49 @@
+
+body,html{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.texthead{
+ font-family: 'Crimson Text', serif !important;
+ font-weight: bold;
+}
+.iconfoot{
+    width: 20px;
+}
+header{
+  height: 126px !important;
+}
+
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+
+.navbar {
+	background-color: #fff!important;
+	color: white;
+}
+.navbar-default .navbar-nav>li>a{
+	color: black;
+	font-variant: small-caps !important;
+	font-size: 14px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	background-color: transparent;
+	color: #263b85;
+}
+/*Homepage buttoms*/
+        
+        
+
