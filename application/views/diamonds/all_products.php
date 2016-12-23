@@ -19,51 +19,51 @@
         }
     }
     #imgbutton1{
-        background: url(<?php echo base_url() ?>assets/diamonds/1.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/1.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton2{
-        background: url(<?php echo base_url() ?>assets/diamonds/2.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/2.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton3{
-        background: url(<?php echo base_url() ?>assets/diamonds/3.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/3.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton4{
-        background: url(<?php echo base_url() ?>assets/diamonds/4.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/4.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton5{
-        background: url(<?php echo base_url() ?>assets/diamonds/5.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/5.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton6{
-        background: url(<?php echo base_url() ?>assets/diamonds/6.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/6.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton7{
-        background: url(<?php echo base_url() ?>assets/diamonds/7.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/7.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton8{
-        background: url(<?php echo base_url() ?>assets/diamonds/8.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/8.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton9{
-        background: url(<?php echo base_url() ?>assets/diamonds/9.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/9.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton10{
-        background: url(<?php echo base_url() ?>assets/diamonds/10.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/10.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton11{
-        background: url(<?php echo base_url() ?>assets/diamonds/14.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/14.jpg) no-repeat center;
         background-size: cover;
     }
     #imgbutton12{
-        background: url(<?php echo base_url() ?>assets/diamonds/15.jpg);
+        background: url(<?php echo base_url() ?>assets/diamonds/15.jpg) no-repeat center;
         background-size: cover;
     }
     /*Hover Effect*/
@@ -79,16 +79,16 @@
     }
 
     .hovereffect:hover .overlay {
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(255,255,255,0.3);
     }
 
     .hovereffect a.info {
       display: inline-block;
       text-decoration: none;
       text-transform: uppercase;
-      color: #fff !important;
+      color: #263b85 !important;
       border: 1px solid #fff !important;
-      margin: 46px 0 0 0;
+      margin: 87% 0 0 0;
       background-color: transparent;
       opacity: 0;
       filter: alpha(opacity=0);
@@ -98,23 +98,17 @@
       -webkit-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out;
       font-weight: normal;
-      height: 90%;
-      width: 90%;
+      height: 10%;
+      width: 100%;
       position: absolute;
       top: -12.5%;
-      left: 5.8%;
-      padding: 70px;
-      padding-top: 45%;
-      padding-left: 32%;
+      padding: 30px;
+      padding-top: 5%;
     }
     .hovereffect a.infovid{
         height: 20%;
-        width: 95%;
+        width: 85%;
         left: 2.5%;
-        top: -5%;
-        padding-top: 12%;
-        padding-bottom: 18%;
-        padding-left: 42%;
     }
 
     .hovereffect:hover a.info {
@@ -123,7 +117,8 @@
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1);
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(255,255,255,1);
+
     }
 
     
@@ -149,28 +144,28 @@
         <div class="col-md-3" >
            <div id="imgbutton1" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
            </div>            
         </div>
         <div class="col-md-3">
             <div id="imgbutton2" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
         <div class="col-md-3">
             <div id="imgbutton3" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
         <div class="col-md-3">
             <div id="imgbutton4" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
@@ -179,28 +174,28 @@
         <div class="col-md-3">
            <div id="imgbutton5" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
            </div>            
         </div>
         <div class="col-md-3">
             <div id="imgbutton6" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
         <div class="col-md-3">
             <div id="imgbutton7" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
         <div class="col-md-3">
             <div id="imgbutton8" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
@@ -209,28 +204,28 @@
         <div class="col-md-3">
            <div id="imgbutton9" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
            </div>            
         </div>
         <div class="col-md-3">
             <div id="imgbutton10" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
         <div class="col-md-3">
             <div id="imgbutton11" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
         <div class="col-md-3">
             <div id="imgbutton12" class="hoverimg3 hovereffect">
                     <div class="overlay">
-                       <a class="info" href="#">Check Now</a>
+                       <a class="info text-center" href="#">Check Now</a>
                     </div>
             </div>    
         </div>
