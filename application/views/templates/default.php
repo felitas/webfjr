@@ -19,12 +19,28 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Fajar Baru</title>
 
-    <!-- Bootstrap -->
+    <!-- initial design -->
     <link href="<?php echo base_url() ?>css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url() ?>css/style.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>css/animate.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>css/font-awesome.min.css">
+    <link href="<?php echo base_url() ?>libraries/fonts/font-awesome.min.css" rel="stylesheet"/>
+
+    <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Source+Sans+Pro" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>  
+
+    <!--FROM TEMPLATE-->
+    <link rel="stylesheet" href="<?php echo base_url() ?>libraries/fuelux/jquery-ui.min.css">
+    <linK href="<?php echo base_url() ?>libraries/owl-carousel/owl.carousel.css" rel="stylesheet"/> <!-- Core Owl Carousel CSS File  *  v1.3.3 -->
+    <linK href="<?php echo base_url() ?>libraries/owl-carousel/owl.theme.css" rel="stylesheet"/> <!-- Core Owl Carousel CSS Theme  File  *  v1.3.3 -->
+    <link href="<?php echo base_url() ?>libraries/flexslider/flexslider.css" rel="stylesheet" /> <!-- flexslider -->
+    <link href="<?php echo base_url() ?>libraries/magnific-popup.css" rel="stylesheet"/> <!-- Light Box -->
+    <link href="<?php echo base_url() ?>css/components.css" rel="stylesheet"/>
+    <link href="<?php echo base_url() ?>css/style.css" rel="stylesheet"/>
+    <link href="<?php echo base_url() ?>css/media.css" rel="stylesheet"/>
+
     
     <script src="<?php echo base_url() ?>js/jquery-1.12.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -40,19 +56,7 @@
             left: 45%;
             z-index: 999;
         }
-        .navbar{
-            margin-bottom: 0;
-            border:none;
-        }
-        .navbar-nav>li{
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-
-        .navbar-default .navbar-toggle{
-            border: none !important;
-        }
-
+  
         .parallax-window {
             min-height: 400px;
             background: transparent;
@@ -188,7 +192,24 @@
         }
     </style>
   </head>
-  <body>
+  <body data-offset="200" data-spy="scroll" data-target=".primary-navigation">
+    <!-- LOADER -->
+    <!-- <div id="site-loader" class="load-complete">
+      <div class="load-position">
+        <div class="logo">
+          <img src="<?php echo base_url() ?>assets/FajarBaru.png" width="180" id="logo" height="180" class="img img-responsive"  alt="Logo Fajar baru">
+        </div>
+        <h6>Please wait, loading...</h6>
+        <div class="loading">
+          <div class="loading-line"></div>
+          <div class="loading-break loading-dot-1"></div>
+          <div class="loading-break loading-dot-2"></div>
+          <div class="loading-break loading-dot-3"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Loader /- -->
+    <!-- top-header -->
     <div class="container">
         <header class="text-center">
                 <!-- <div id="infinitespin" class="rotating"></div> -->
@@ -201,20 +222,44 @@
                 </div> 
         </header>
     </div>
-        <nav class="navbar navbar-default" id="navbar" style="padding-bottom: 0px !important;">
-            <div class="container-fluid">
+        
+      <div class="menu-block">
+      <!-- container -->
+      <div class="container">
+        <nav class="navbar navbar-default navbar-static-top">           
+          <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>              
+            </button>               
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li id="home"><a href="<?php echo base_url()?>">Home</a></li>
+                    <li><a href="<?php echo base_url('diamonds')?>" >Diamond</a></li>
+                    <li><a href="#">Gold</a></li>
+                    <li><a href="#">Fine Gold</a></li>
+                    <li><a href="#">Promo & Event</a></li>
+                    <li><a href="#">How to Buy</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </nav>
+        </div>
+    </div><!-- menu-block /- -->
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <!-- <div class="navbar-header">
                     <a class="navbar-brand" href="#"><img src="<?php echo base_url() ?>assets/logo-horizontal.png" id="imgbrand" class="img img-responsive"  alt="Logo Fajar baru"></a>
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                </div>
+                </div> -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav" style="padding-bottom: 0px !important;">
                     <li id="home"><a href="<?php echo base_url()?>">Home</a></li>
                     <li><a href="<?php echo base_url('diamonds')?>" >Diamond</a></li>
@@ -224,8 +269,7 @@
                     <li><a href="#">How to Buy</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+            
     
 
 <?php echo $body?>
@@ -295,9 +339,6 @@
   </body>
 </html>
 <script>
-    $(document).ready(function(){
-  
-});
 
 $('.dropdown').on('show.bs.dropdown', function(e){
     $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
@@ -311,7 +352,6 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
 var waypoint = new Waypoint({
   element: document.getElementById('sliderfluid'),
   handler: function(direction) {
-    $('#navbar').addClass('navbar-fixed-top');
     $('#imgbrand').css('width','150px');
     $('#home').css('margin-left','0px');
   }
@@ -320,7 +360,6 @@ var waypoint = new Waypoint({
 var waypoint2 = new Waypoint({
     element: document.getElementById('sliderfluid'),
     handler:function(direction) {
-        $('#navbar').removeClass('navbar-fixed-top');
         $('#imgbrand').css('width','0px');
         $('#home').css('margin-left','50px');
     },

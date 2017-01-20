@@ -276,17 +276,17 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-    <script type="text/javascript" src="<?php echo base_url() ?>js/main.js"></script>
-    <script src="<?php echo base_url() ?>js/app.js"></script>
-    <script src="<?php echo base_url() ?>js/stats.js"></script>
-    <script src="<?php echo base_url() ?>js/logopainter.js"></script>
+    <!-- <script type="text/javascript" src="<?php #echo base_url() ?>js/main.js"></script>
+    <script src="<?php #echo base_url() ?>js/app.js"></script>
+    <script src="<?php #echo base_url() ?>js/stats.js"></script>
+    <script src="<?php #echo base_url() ?>js/logopainter.js"></script>
     <script>
       update = function() {
        
         requestAnimationFrame(update);
       };
       requestAnimationFrame(update);
-    </script>
+    </script> -->
     <script>
         $(document).ready(function(){
             var $animation_elements = $('.animation-element');
@@ -299,31 +299,6 @@
                 $("#promovideo").attr('src', 'url');
             });
         });
-        
-
-        function check_if_in_view() {
-          var window_height = $window.height();
-          var window_top_position = $window.scrollTop();
-          var window_bottom_position = (window_top_position + window_height);
-         
-          $.each($animation_elements, function() {
-            var $element = $(this);
-            var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
-            var element_bottom_position = (element_top_position + element_height);
-         
-            //check to see if this current container is within viewport
-            if ((element_bottom_position >= window_top_position) &&
-                (element_top_position <= window_bottom_position)) {
-              $element.addClass('in-view');
-            } else {
-              $element.removeClass('in-view');
-            }
-          });
-        }
-
-        $window.on('scroll resize', check_if_in_view);
-        $window.trigger('scroll');
 
     </script>
   </body>
